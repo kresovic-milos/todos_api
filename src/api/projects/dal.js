@@ -3,8 +3,17 @@ const uuidv1 = require('uuid/v1');
 
 const getAll = async () => db.get('projects');
 
-const getProject = async id => db.get('projects').find({ id });
-
+const getProject = async id => {
+  if (
+    await db
+      .get('projects')
+      .find({ id })
+      .value()
+  ) {
+    return await db.get('projects').find({ id });
+  }
+  throw new Error('No project found!');
+};
 const postProject = async project => {
   if (project.title && project.title.lenght > 1) {
     return db
@@ -33,9 +42,26 @@ const putProjet = async project => {
   throw new Error('Project does not exist!');
 };
 
+const deleteProject = async id => {
+  if (
+    await db
+      .get('projects')
+      .find({ id })
+      .value()
+  ) {
+    return await db
+      .get('projects')
+      .remove({ id })
+      .write();
+  }
+
+  throw new Error('Project does not exist!');
+};
+
 module.exports = {
   getAll,
   getProject,
   postProject,
-  putProjet
+  putProjet,
+  deleteProject
 };

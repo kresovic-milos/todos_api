@@ -1,10 +1,5 @@
 {
-  "projects": [
-    {
-      "id": 1,
-      "title": "lowdb is awesome"
-    }
-  ],
+  "projects": [],
   "users": [
     {
       "id": "1",
@@ -41,6 +36,26 @@
       "id": "4",
       "username": "kresa",
       "password": "$2b$10$TEiLriWNmPhuFVX/Scd5qe0kw6Ri5wIazMaYiVYSu8cK/A3DujJyi"
+    },
+    {
+      "id": "b5a8e3e0-b91f-11e9-9be2-21f9d93bb3cf",
+      "username": "user1",
+      "password": "$2b$10$JNXLWRMxnXjQQgyABD2dKOl0IgHleoKwFCp.tYbO.i7jnntG4N8p2"
+    },
+    {
+      "id": "fc2f99d0-b924-11e9-828e-e3bbcef5547f",
+      "username": "usasdasde",
+      "password": "$2b$10$h.2Lrk1l/7d6uQmX4Z3CvOD0Tbwt0Z5Mcgn290ilrPOAWJZF91eZ."
+    },
+    {
+      "id": "0370e690-b925-11e9-839c-67e46e6c8f3c",
+      "username": "usa11",
+      "password": "$2b$10$4XV0Q7lkO6Rs16k/2VA87OaHmfzVGXcw.Zk7/wjkGqGroDGrYfm5u"
+    },
+    {
+      "id": "0dfa0b50-b925-11e9-b777-a719719283e5",
+      "username": "usa11",
+      "password": "$2b$10$7YQ9XnK708f.SSYewiTevetIGsw7siE5tbk2qae/1jLXLZCPe9Osm"
     }
   ]
 }

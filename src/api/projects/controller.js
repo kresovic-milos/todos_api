@@ -1,6 +1,12 @@
 var express = require('express');
 var router = express.Router();
-const { getAll, getProject, postProject, putProject } = require('./service');
+const {
+  getAll,
+  getProject,
+  postProject,
+  putProject,
+  deleteProject
+} = require('./service');
 
 router.get('/', async (req, res, next) => {
   try {
@@ -42,8 +48,15 @@ router.put('/', async (req, res, next) => {
   }
 });
 
-router.delete('/', function(req, res, next) {
-  res.send();
+router.delete('/', async (req, res, next) => {
+  try {
+    console.log('req.body', req.body.id);
+    project = await deleteProject(req.body.id);
+    console.log('project deleted', JSON.stringify(project));
+    res.send(project);
+  } catch (error) {
+    next(error);
+  }
 });
 
 module.exports = router;
