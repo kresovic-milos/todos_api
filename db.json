@@ -1,3 +1,46 @@
 {
-  "projects": [{ "id": 1, "title": "lowdb is awesome" }]
+  "projects": [
+    {
+      "id": 1,
+      "title": "lowdb is awesome"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "paja",
+      "password": "123456"
+    },
+    {
+      "id": "2",
+      "username": "paja",
+      "password": "124336"
+    },
+    {
+      "id": "2",
+      "password": {}
+    },
+    {
+      "id": "2",
+      "password": "$2b$10$u4F92psKAjV2IfCZ36IO9.cLhGrMFIlgBJCBLLct9XXIBUfnpOZg6"
+    },
+    {
+      "id": "3",
+      "password": "$2b$10$7Wox4RKCAGTYVOzbgAgLjulPfLMs3oFE16vYm55KM8DNGJZq/FyoG"
+    },
+    {
+      "id": "3",
+      "password": "$2b$10$epfDUc3xP7PldK8.h30aL.eeTEhEP/Sf42MT5wZeSLR.WWH/aQsfe"
+    },
+    {
+      "id": "3",
+      "username": "pajaaa231",
+      "password": "$2b$10$LekfAnmOkh3BmVxKe4.0j.o/Xhyzp3eQc6geKQvQdaN0AIQLxUpvy"
+    },
+    {
+      "id": "4",
+      "username": "kresa",
+      "password": "$2b$10$TEiLriWNmPhuFVX/Scd5qe0kw6Ri5wIazMaYiVYSu8cK/A3DujJyi"
+    }
+  ]
 }
